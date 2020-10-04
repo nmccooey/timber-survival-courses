@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { LinkContainer } from "react-router-bootstrap";
 import { Card, Button } from "react-bootstrap";
 
 const Course = ({ course }) => {
@@ -29,7 +30,9 @@ const Course = ({ course }) => {
         </Card.Text>
         <Card.Text as="h3">${course.price}</Card.Text>
       </Card.Body>
-      <Button variant="dark">Sign Up</Button>
+      <LinkContainer to={`/course/${course._id}`}>
+        <Button variant="dark">Sign Up</Button>
+      </LinkContainer>
     </Card>
   );
 };
