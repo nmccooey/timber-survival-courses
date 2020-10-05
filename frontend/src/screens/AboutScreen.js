@@ -30,7 +30,7 @@ const AboutScreen = () => {
             details, call us at (555) 912-1234
           </p>
         </div>
-        <p>
+        <p className="text-center mt-4">
           <LinkContainer to="/">
             <Button variant="dark">Choose a Course</Button>
           </LinkContainer>
