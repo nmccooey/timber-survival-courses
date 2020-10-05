@@ -31,7 +31,7 @@ const Course = ({ course }) => {
         <Card.Text as="h3">${course.price}</Card.Text>
       </Card.Body>
       <LinkContainer to={`/course/${course._id}`}>
-        <Button variant="dark">Sign Up</Button>
+        <Button variant="dark">Learn More</Button>
       </LinkContainer>
     </Card>
   );
