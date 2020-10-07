@@ -4,7 +4,10 @@
   "description": "Store offering survival courses in various environments.",
   "main": "index.js",
   "scripts": {
-    "start": "node backend/server"
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently npm \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -18,5 +21,9 @@
   "homepage": "https://github.com/nmccooey/timber-survival-courses#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
   }
 }
